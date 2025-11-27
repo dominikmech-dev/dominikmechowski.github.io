@@ -58,17 +58,73 @@
 
 <section>
   <h2>Projects</h2>
-  <div class="project">
-    <h3>SolidWorks Example</h3>
-    <p>A part modeled in SolidWorks to practice sketches and assemblies.</p>
-    <img src="images/part1.png" alt="SolidWorks Part Example">
-  </div>
-  <div class="project">
-    <h3>Blender Render</h3>
-    <p>A 3D render created in Blender to practice modeling and animation.</p>
-    <img src="images/blender1.png" alt="Blender Render Example">
+  <div class="projects-container">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="images/solidworks_bracket.png" alt="SolidWorks Bracket">
+      <h3>SolidWorks Bracket</h3>
+      <p>A practice part modeled to explore sketches and assemblies.</p>
+      <a href="projects/solidworks_bracket.html" class="project-button">View Project</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="images/blender_animation.png" alt="Blender Animation">
+      <h3>Blender Animation</h3>
+      <p>A 3D animation created to showcase modeling and rendering skills.</p>
+      <a href="projects/blender_animation.html" class="project-button">View Project</a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="images/electromiix_website.png" alt="Electro Miix Website">
+      <h3>Electro Miix Website</h3>
+      <p>Experience in web design and marketing for a personal project.</p>
+      <a href="projects/electromiix_website.html" class="project-button">View Project</a>
+    </div>
+
   </div>
 </section>
+
+<!-- CSS for Projects Layout -->
+<style>
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.project-button:hover {
+  background-color: #0056b3;
+}
+</style>
 
 <section>
   <h2>Skills</h2>
